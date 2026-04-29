@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Cells</title>
+  <style>
+    :root {
+      --ink: #12312f;
+      --muted: #4b635f;
+      --paper: #f7fbf4;
+      --surface: #ffffff;
+      --primary: #0f766e;
+      --primary-dark: #0b4f4a;
+      --accent: #84cc16;
+      --line: #dce8df;
+      --shadow: 0 20px 50px rgba(15, 118, 110, 0.16);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--paper), #eef8f2);
+      line-height: 1.6;
+    }
+    header {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      padding: 0 20px;
+    }
+    .hero {
+      overflow: hidden;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      background: var(--surface);
+      border: 1px solid rgba(15, 118, 110, 0.18);
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+      height: clamp(230px, 100px, 430px);
+      object-fit: cover;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 42px 22px 70px;
+    }
+    .intro {
+      display: grid;
+      gap: 26px;
+      align-items: start;
+    }
+    .panel {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: 0 14px 34px rgba(18, 49, 47, 0.08);
+    }
+    h1, h2 { line-height: 1.1; margin: 0 0 16px; }
+    h1 { font-size: clamp(2rem, 5vw, 4rem); }
+    h2 { font-size: clamp(1.45rem, 3vw, 2.1rem); }
+    p { margin: 0 0 16px; color: var(--muted); font-size: 1.05rem; }
+    ul { margin: 14px 0 0; padding-left: 22px; color: var(--muted); }
+    li { margin: 10px 0; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--primary-dark);
+      background: #d9f99d;
+      border: 1px solid #bef264;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-weight: 700;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 13px 18px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 12px 24px rgba(15, 118, 110, 0.22);
+      transition: transform 180ms ease, background 180ms ease;
+    }
+    .button-link:hover, .button-link:focus {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      outline: 3px solid rgba(132, 204, 22, 0.45);
+      outline-offset: 3px;
+    }
+    .diagram {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="vaccination.jpg" alt="vaccination.jpg">
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <article class="panel">
+        <h1 id="page-title">Vaccine Overload</h1>
+        <p>Created by: Johnathan Hernandez<br>j.hernandez06tx@gmail.com</p>
+        <p>In the early years of a child's life, they are given a number of vaccines in order to protect against a number of dangerous infections.
+          Children will get vaccinations for a number of different diseases from MMR (Measles, Mumps, and Rubella), Chickenpox, and Polio along with routine vaccinations for diseases like the flu.
+          A common concerns parents have is that a child's immune system will be overwhelmed by the number of vaccines they take, but evidence shows that immune systems are more than capable of handling the amount of vaccines a child takes.
+        </p>
+        <p>Cells take in nutrients, release energy, grow, communicate, and reproduce. Understanding cells helps explain how bodies function, how diseases develop, and how life continues from one generation to the next.</p>
+        <a class="button-link" href="second_page.html">Explore cell structure →</a>
+      </article>
+    </section>
+
+    <section class="works_cited" aria-label="Core cell ideas">
+      <article class="panel">
+
+      </article>
+    </section>
+  </main>
+
+  <footer>Created for BIO 311c project</footer>
+</body>
+</html>
