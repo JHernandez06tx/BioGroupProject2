@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaccine Overload</title>
+  <title>Main Page</title>
   <style>
     :root {
       --ink: #12312f;
@@ -61,7 +61,7 @@
     }
     h1, h2 { line-height: 1.1; margin: 0 0 16px; }
     h1 { font-size: clamp(2rem, 5vw, 4rem); }
-    h2 { font-size: clamp(1.45rem, 3vw, 2.1rem); }
+    h2 { font-size: clamp(1rem, 2vw, 1.5rem); }
     p { margin: 0 0 16px; color: var(--muted); font-size: 1.05rem; }
     ul { margin: 14px 0 0; padding-left: 22px; color: var(--muted); }
     li { margin: 10px 0; }
@@ -98,11 +98,11 @@
       outline: 3px solid rgba(132, 204, 22, 0.45);
       outline-offset: 3px;
     }
-    .diagram {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 30px;
+      font-size: 0.95rem;
     }
 </style>
 </head>
@@ -116,20 +116,34 @@
   <main>
     <section class="intro" aria-labelledby="page-title">
       <article class="panel">
+        <span class="tag">Introduction</span>
         <h1 id="page-title">Vaccine Overload</h1>
         <p>Created by: Johnathan Hernandez<br>j.hernandez06tx@gmail.com</p>
         <p>In the early years of a child's life, they are given a number of vaccines in order to protect against a number of dangerous infections.
           Children will get vaccinations for a number of different diseases from MMR (Measles, Mumps, and Rubella), Chickenpox, and Polio along with routine vaccinations for diseases like the flu.
           A common concerns parents have is that a child's immune system will be overwhelmed by the number of vaccines they take, but evidence shows that immune systems are more than capable of handling the amount of vaccines a child takes.
         </p>
-        <p>Cells take in nutrients, release energy, grow, communicate, and reproduce. Understanding cells helps explain how bodies function, how diseases develop, and how life continues from one generation to the next.</p>
-        <a class="button-link" href="second_page.html">Explore cell structure →</a>
+        <p>Concerned parents may claim that too many vaccines in short succession will "overwhelm" or weaken their child's immune system.
+          Such vaccination concerns have existed for a long time, with concerns regarding vaccines typically being overexaggerated, risking the lives of many who may be at risk<sup>1</sup>.
+          However, it is still a concern that deserves time to be explored, since children are typically given a large number of vaccinations.
+        </p>
+        <p>Vaccines work by introducing modified variants of pathogenic diseases or simply their antigens.
+          The body's immune system uses B cells that are able to modify and generate different antigen receptors through V(D)J recombination, allowing for nearly limitless amounts of potential antigen binding sites<sup>2</sup>.
+        </p>
+        <p>Because the body's immune system is able to recognize and fight a massive number of different infections at the same time, there is little risk in multiple vaccines in quick succession.
+          Most vaccines contain far fewer than 100 antigens, with some only containing only a single antigen.
+          Thanks to the advancements in vaccines, there are far fewer antigens in modern vaccines than in past vaccines. Each infant is possibly able to take 10,000 vaccines at the same time before the immune system is "overwhelmed"<sup>3</sup>.
+        </p>
+        <a class="button-link" href="second_page.html">Next page →</a>
       </article>
     </section>
 
     <section class="works_cited" aria-label="Core cell ideas">
       <article class="panel">
-
+        <h2 id="page-title">Works Cited</h2>
+        <p><sup>1</sup>Shona, Hilton et al. "'Combined vaccines are like a sudden onslaught to the body's immune system': Parental concerns about vaccine 'overload' and 'immune-vulnerability'." <i>Vaccine</i>, Vol. 24, Iss. 20, 15 May 2006.</p>
+        <p><sup>2</sup>Roth, David B. "V(D)J Recombination: Mechanism, Errors, and Fidelity." <i>Microbiology Spectrum</i>, Vol. 2, 2014.</p>
+        <p><sup>3</sup>Offit, Paul A, et al. "Addressing parents' concerns: do multiple vaccines overwhelm or weaken the infant's immune system?" <i>Pediatrics</i>, Vol. 109, Iss. 1, January 2002.</p>
       </article>
     </section>
   </main>
